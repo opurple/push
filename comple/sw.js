@@ -49,8 +49,8 @@ self.addEventListener('push', function(event) {
   const title = 'Omnilife Peru';
   const options = {
     body: `${event.data.text()}`,
-    icon: 'images/omni.png',
-    badge: 'images/logo.png'
+    icon: 'images/logo.png',
+    badge: 'images/omni.png'
   };
 
   event.waitUntil(self.registration.showNotification(title, options));
