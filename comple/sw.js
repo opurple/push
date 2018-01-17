@@ -46,11 +46,11 @@ self.addEventListener('push', function(event) {
   console.log('[Service Worker] Push Received.');
   console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
 
-  const title = 'Push Codelab';
+  const title = 'Omnilife Peru';
   const options = {
     body: `${event.data.text()}`,
-    icon: 'images/icon.png',
-    badge: 'images/badge.png'
+    icon: 'images/omni.png',
+    badge: 'images/logo.png'
   };
 
   event.waitUntil(self.registration.showNotification(title, options));
